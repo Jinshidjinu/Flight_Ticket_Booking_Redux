@@ -1,9 +1,15 @@
 import { useDispatch, useSelector } from "react-redux"
 import { AiFillDelete } from "react-icons/ai";
+import { deleteBooking } from "../Redux/actions";
 
 const Table = ()=>{
     const data = useSelector((state)=> state.data)
     const dispatch = useDispatch()
+
+    const handleDelete = (e) =>{
+        const id = parseInt   (e.currentTarget.id);
+        dispatch(deleteBooking(id))
+    }
      console.log(data,"hello")
      return(
       
@@ -16,7 +22,6 @@ const Table = ()=>{
     {/* head */}
     <thead>
       <tr className="text-blue-900">
-        <th>No</th>
         <th>DESTINATION FROM</th>
         <th>DESTINATION TO</th>
         <th>JOURNY DATE</th>
@@ -29,13 +34,12 @@ const Table = ()=>{
         {
             data.map((data,index)=>(
                 <tr key={index} >
-                <th className="datas">{data.id}</th>
                 <td className="datas">{data.from}</td>
                 <td className="datas">{data.to}</td>
                 <td className="datas">{data.date}</td>
                 <td className="datas">{data.guests}</td>
                 <td className="datas">{data.TicketClassName}</td>
-                <td><button className="delete"><AiFillDelete /></button></td>
+                <td><button id={`${data.id}`} onClick={(e)=> handleDelete(e)} className="delete"><AiFillDelete /></button></td>
               </tr>
 
             ))

@@ -32,7 +32,7 @@ const handleBook =(e) =>{
 console.log(bookingData);
 
   return (
-    <div className='md:mt-[160px] mt-[100px] md:ml-[190px] mx-4 relative'>
+    <div className='md:mt-[160px] mt-[100px] md:ml-[150px] mx-4 relative'>
          <div className='bg-white rounded-md max-w-6xl w-full max-auto'>
          <form className='flex flex-col md:flex-row '>
 
