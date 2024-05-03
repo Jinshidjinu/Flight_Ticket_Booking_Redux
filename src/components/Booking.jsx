@@ -40,7 +40,7 @@ console.log(bookingData);
    <div className='py-1.5 px-2.5 flex-1 border-r-2'>
     <p>Destination From</p>
    <div>
-    <select required onChange={(e) => handleChange(e)} name="from" id="from" className='outline-none p-2 w-full' >
+    <select required onChange={(e) => handleChange(e)} name="from" id="from" className='outline-none p-2 w-full bg-white text-black' >
     <option value="">Please Select</option>
     <option>Eiffel Tower</option>
     <option>Louis Vuitton Foundation</option>
@@ -54,7 +54,7 @@ console.log(bookingData);
    <div className='py-1.5 px-2.5 flex-1 border-r-2'>
     <p>Destination To</p>
    <div>
-  <select name="to" id="to" onChange={(e)=> handleChange(e)} className='outline-none p-2 w-full'>
+  <select name="to" id="to" onChange={(e)=> handleChange(e)} className='outline-none p-2 w-full  bg-white text-black'>
     <option value="">Please Select</option>
     <option>Eiffel Tower</option>
     <option>Louis Vuitton Foundation</option>
@@ -69,7 +69,7 @@ console.log(bookingData);
   <div className='py-1.5 px-2.5 flex-1 border-r-2'>
     <p>Journey Date</p>
 
-    <input type="date" name='date' required onChange={(e)=> handleChange(e)} className='outline-none p-2 w-full' />
+    <input type="date" name='date' required onChange={(e)=> handleChange(e)} className='outline-none p-2 w-full  bg-white text-black' />
 
   </div>
 
@@ -80,7 +80,7 @@ console.log(bookingData);
     <p>Guests </p>
 
     <div>
-  <select name="guests" id="guests" onChange={(e) => handleChange(e)} className='outline-none p-2 w-full'>
+  <select name="guests" id="guests" onChange={(e) => handleChange(e)} className='outline-none p-2 w-full  bg-white text-black'>
     <option value="">Please Select</option>
     <option>1 Person</option>
     <option>2 Persons</option>
@@ -97,7 +97,7 @@ console.log(bookingData);
      <div className='py-1.5 px-2.5 flex-1 border-r-2'>
     <p>Travel Class</p>
     <div>
-  <select name="TicketClassName" id="TicketClassName" onChange={(e)=>handleChange(e)} className='outline-none p-2 w-full'>
+  <select name="TicketClassName" id="TicketClassName" onChange={(e)=>handleChange(e)} className='outline-none p-2 w-full  bg-white text-black'>
     <option value="">Please Select</option>
     <option>Economy</option>
     <option>Business</option>

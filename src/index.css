@@ -3,5 +3,19 @@
 @tailwind utilities;
 
 
+p{
+    color: rgb(10, 9, 9);
+    font-weight: 700;
+}
 
+.delete{
+    background-color: rgb(175, 10, 10);
+    border-radius: 2px;
+}
 
+.datas{
+ 
+    color: black;
+    font-family: sans-serif;
+
+}
