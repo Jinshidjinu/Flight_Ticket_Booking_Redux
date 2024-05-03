@@ -10,6 +10,7 @@ const  Booking = () => {
   const dispatch = useDispatch()
   const size = data.length
   const [bookingData, setbookingData] = useState({})
+  
 const handleChange = (e) =>{
   console.log(e.target.value);
   const newBookingData = {...bookingData};
@@ -109,7 +110,7 @@ console.log(bookingData);
 
     {/*Travel Class*/}
 
-    <button type='submit' className='bg-indigo-800 w-[150px] text-white py-1 space-x-2 text-center flex items-center justify-center' ><FaPlus className='mr-2'/>Book Now</button>
+    <button onClick={(e)=> handleBook(e)} type='submit' className='bg-indigo-800 w-[150px] text-white py-1 space-x-2 text-center flex items-center justify-center' ><FaPlus className='mr-2'/>Book Now</button>
   
 </form>
 

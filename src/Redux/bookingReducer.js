@@ -20,7 +20,7 @@ const bookingReducer = (state = initialState,action)=>{
                 return {data:filteredData}
             
              default:
-                break;
+                return state;
            
     }
 
